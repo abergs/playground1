@@ -1,7 +1,7 @@
-<head>  <script type="module" crossorigin src="/playground1/assets/sugarbreak.a5d5d27f.js"></script>
+<head>  <script type="module" crossorigin src="/playground1/assets/sugarbreak.9e7db516.js"></script>
   <link rel="modulepreload" href="/playground1/assets/modulepreload-polyfill.b7f2da20.js">
   <link rel="modulepreload" href="/playground1/assets/vendor.23931e5f.js">
-  <link rel="stylesheet" href="/playground1/assets/sugarbreak.02efb3cf.css">
+  <link rel="stylesheet" href="/playground1/assets/sugarbreak.c42e3e86.css">
 </head>
 <body class="text-center">
   <div id="page">
@@ -11,7 +11,7 @@
   </div>
 
   <div id="container"></div>
-  <div id="score">0</div>
+  <div id="score" class="score">0</div>
   <div id="last_score">0</div>
 
   <div id="bs">
@@ -20,11 +20,18 @@
   </div>
 
   <div class="popup">
+    <div id="game_start" class="modal">
+      <h2>Break Anders blood sugar!</h2>
+      <p>Get as many points as possible, while surving the blood sugar changes</p>
+
+      <button class="game_start">Press space to start</button>
+    </div>
+
     <div id="game_over" class="modal hidden">
       <h2>You died!</h2>
       <p>Did the bloodsugar get the best of you?</p>
 
-      <strong>Score</strong>
+      <strong>Score: <span class="score"></span></strong>
       <button class="game_start">Press space to try again</button>
     </div>
   </div>
