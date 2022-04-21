@@ -1,4 +1,4 @@
-import"./modulepreload-polyfill.b7f2da20.js";import{T as x,G as d,S as y,f as m,b as z,n as p,g as u,P,W as w,O as h,i as _}from"./vendor.90716906.js";var b="/playground1/assets/texture.fb0f5fdc.jpg",S="/playground1/assets/r2.dee41ee3.png",U="/playground1/assets/b2.0dc69ad7.png";const M=`
+import"./modulepreload-polyfill.b7f2da20.js";import{T as x,G as d,S as y,f as m,b as z,n as p,g as u,P,W as w,O as h,i as _}from"./vendor.273154ce.js";var b="/playground1/assets/texture.fb0f5fdc.jpg",S="/playground1/assets/r2.dee41ee3.png",U="/playground1/assets/b2.0dc69ad7.png";const M=`
 varying vec2 vUv;
 uniform float uTime;
 uniform vec2 uResolution;
@@ -310,4 +310,4 @@ void main() {
   //gl_Position.z = sin(uv.y);
   //gl_Position.x += sin(uTime) * 0.1;
 }`,n=new x;n.load(b);n.load(S);const v=n.load(U);new d;const T=document.querySelector("canvas"),a=new y;let g=16*12;const r=64,I=new m(g,g,r,r),c=new z({uniforms:{uTime:{value:0},uResolution:{type:"v2",value:new p},alphaMap:{type:"t",value:v},scaleUp:{value:r}},transparent:!0,depthTest:!1,fragmentShader:M,vertexShader:C,alphaMap:v});c.uniforms.uResolution.value.x=window.innerWidth;c.uniforms.uResolution.value.y=window.innerHeight;const i=new u(I,c);i.rotation.x=181;i.position.z=2;a.add(i);const e={width:window.innerWidth,height:window.innerHeight};window.addEventListener("resize",()=>{e.width=window.innerWidth,e.height=window.innerHeight,t.aspect=e.width/e.height,t.updateProjectionMatrix(),o.setSize(e.width,e.height),o.setPixelRatio(Math.min(window.devicePixelRatio,2))});const t=new P(75,e.width/e.height,1,3e3);t.position.x=0;t.position.y=1;t.position.z=25;a.add(t);const o=new w({canvas:T,antialias:!0});o.setSize(e.width,e.height);o.setPixelRatio(Math.min(window.devicePixelRatio,2));const s=new h(t,o.domElement);s.enableDamping=!0;const R=new _,l=()=>{const f=R.getElapsedTime();i.material.uniforms.uTime.value=f,s.update(),o.render(a,t),window.requestAnimationFrame(l)};l();
-//# sourceMappingURL=particles.91018623.js.map
+//# sourceMappingURL=bb2.458c89c7.js.map
